@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <i class="fa fa-list fs-5"></i>
+                    <strong>TO-DO</strong></a>
+                <form class="d-flex p-3">
+                    <i class="fa fa-plus fs-5 pe-3" id="plus"></i>
+                    <i class="fa fa-refresh fs-5 pe-3" id="refresh"></i>
+                    <i class="fa fa-search fs-5 pe-3" id="search"></i>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container p-5">
+        <div id="firstInput">
+            <div class="d-flex" id="inputValue">
+                <input type="text" id="input" class="form-control" placeholder="TaskName">
+                <input type="date" id="date" class="form-control">
+                <i class="fa fa-check fs-5 pe-2" id="check"></i>
+                <i class="fa fa-eraser fs-5 ps-2" id="erase"></i>
+            </div>
+            <p class="pt-2" id="errorContent"></p>
+        </div>
+        <div id="secondInput">
+            <input type="text" id="searchinput" class="form-control" placeholder="Search">
+            <i class="fa fa-eraser fs-5 ps-2" id="erase1"></i>
+        </div>
+        <div class="row pt-5">
+            <div class=" col-md-12  p-4 border border-2 border-dark">
+                <h3 class="text-center"><i class="fa fa-list fs-5 "></i> TaskList</h3>
+                <ul id="taskListUl">
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-5 border  border-2 border-dark">
+                <div class="p-4 ">
+                    <h3 class="text-center"><i class="fa fa-check fs-5"></i> Completed Task</h3>
+                    <ul id="completedTaskUl">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 border border-2 border-dark">
+                <div class="p-4 ">
+                    <h3 class="text-center"><i class="fa fa-clock fs-5"></i> Old Task</h3>
+                    <ul id="oldTaskUl">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12 text-center p-4 border border-2 border-dark">
+                <h3><i class="fa fa-battery fs-5"></i> Progress</h3>
+                <p id="progressContent"></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

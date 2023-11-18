@@ -1,0 +1,10 @@
+.liststyle{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0px 100px;
+    font-size: 21px;
+    margin: 5px;
+}
+li{
+    list-style: none;
+}
